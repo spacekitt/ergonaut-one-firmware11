@@ -60,7 +60,7 @@
 
         default_layer {
             bindings = <
-&none                      &kp Q  &kp W  &kp E      &kp R                 &kp T             &kp Y      &kp U           &kp I      &kp O       &kp P          &mt SLASH EQUAL
+&tog 2                     &kp Q  &kp W  &kp E      &kp R                 &kp T             &kp Y      &kp U           &kp I      &kp O       &kp P          &mt SLASH EQUAL
 &mt RIGHT_CONTROL GRAVE    &kp A  &kp S  &kp D      &kp F                 &kp G             &kp H      &kp J           &kp K      &kp L       &kp SEMICOLON  &mt LEFT_WIN MINUS
 &mt LEFT_ALT LEFT_BRACKET  &kp Z  &kp Q  &kp C      &kp V                 &kp B             &kp N      &kp M           &kp COMMA  &kp PERIOD  &kp SLASH      &mt RIGHT_ALT RIGHT_BRACKET
                                          &lt 2 TAB  &mt LEFT_SHIFT SPACE  &mt LEFT_WIN RET  &lt 1 ESC  &mt RSHFT BSPC  &lt 2 DEL
