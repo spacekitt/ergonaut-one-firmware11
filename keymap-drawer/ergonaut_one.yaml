@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: ergonaut_one}
 layers:
   default:
-  - {t: raise, h: toggle}
+  - '?'
   - Q
   - W
   - E
@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - ;
-  - {t: '-', h: Gui+A}
+  - {t: '-', h: '?'}
   - {t: '[', h: LEFT ALT}
   - Z
   - X
