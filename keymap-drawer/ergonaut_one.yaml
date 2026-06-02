@@ -1,6 +1,7 @@
+layout: {zmk_keyboard: ergonaut_one}
 layers:
   default:
-  - {t: ']', h: Gui}
+  - {t: raise, h: toggle}
   - Q
   - W
   - E
@@ -11,8 +12,8 @@ layers:
   - I
   - O
   - P
-  - '['
-  - {t: '`', h: Ctrl}
+  - {t: '=', h: /}
+  - {t: '`', h: RIGHT CONTROL}
   - A
   - S
   - D
@@ -23,8 +24,8 @@ layers:
   - K
   - L
   - ;
-  - {t: '''', h: Ctrl}
-  - {t: '-', h: Alt}
+  - {t: '-', h: Gui+A}
+  - {t: '[', h: LEFT ALT}
   - Z
   - X
   - C
@@ -35,10 +36,10 @@ layers:
   - ','
   - .
   - /
-  - {t: \, h: Alt}
+  - {t: ']', h: RIGHT ALT}
   - {t: ↹, h: raise}
-  - {t: ␣, h: Shift}
-  - {t: ⏎, h: lower}
+  - {t: ␣, h: LEFT SHIFT}
+  - {t: ⏎, h: LEFT WIN}
   - {t: Esc, h: lower}
   - {t: ⌫, h: Shift}
   - {t: ⌦, h: raise}
@@ -81,12 +82,12 @@ layers:
   - Alt
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   raise:
-  - {t: KP NUM, h: Gui}
+  - {t: default, h: toggle}
   - KP SLASH
   - KP 7
   - KP 8
@@ -94,7 +95,7 @@ layers:
   - KP MINUS
   - Vol Up
   - Home
-  - Print Scrn
+  - UP ARROW
   - Page Up
   - SLCK
   - CLCK
@@ -106,11 +107,11 @@ layers:
   - KP PLUS
   - MUTE
   - ←
-  - ↑
+  - DOWN ARROW
   - →
   - Insert
   - {t: APP, h: Ctrl}
-  - Alt
+  - {t: BACKSPACE, h: LEFT SHIFT}
   - KP 0
   - KP 1
   - KP 2
@@ -118,7 +119,7 @@ layers:
   - KP DOT
   - Vol Down
   - End
-  - ↓
+  - PRINTSCREEN
   - Page Down
   - Pause Break
   - Alt
@@ -132,7 +133,7 @@ layers:
   - Boot
   - ''
   - ''
-  - ''
+  - BT 4
   - ''
   - ''
   - ''
@@ -154,7 +155,7 @@ layers:
   - BT 1
   - BT CLR
   - Reset
-  - ''
+  - RGB SAD
   - ''
   - ''
   - ''
@@ -167,7 +168,20 @@ layers:
   - Reset
   - {type: held}
   - ''
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [37, 13]
+  k: Ctl+Z
+- p: [37, 14]
+  k: Ctl+X
+- p: [37, 15]
+  k: Ctl+C
+- p: [37, 16]
+  k: Ctl+V
+- p: [37, 17]
+  k: {t: Ctl+F, h: toggle}
+- p: [37, 4]
+  k: {t: Ctl+T, h: toggle}
